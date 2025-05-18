@@ -37,7 +37,7 @@ $\epsilon$ - Threshold to consider two points as being close to each other.
 1. We cannot set the number of clusters explicitly. However, in my experience I have found that tuning $\epsilon$ and ```min_pts``` properly gives a general bound on the number of clusters formed.
 2. The algorithm is slow. $O(n^2)$ in time complexity and $O(n^2)$ in space complexity. However this can be sped up by using parallel hardware like GPUs.
 
-I have used CUDA C++ to speed up the algorithm significantly. It works in for general N-dimensional points.
+I have used CUDA C++ to speed up the algorithm significantly. It works for general N-dimensional points.
 
 here's a demo:
 
